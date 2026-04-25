@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "173819534114",
+    "project_id": "drvttpush",
+    "storage_bucket": "drvttpush.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173819534114:android:292e473c7593829e3fe37b",
+        "android_client_info": {
+          "package_name": "com.companyname.HybridMauiApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHQ9GPnnI_3Gwf_tkjOvKIe6pTGbASvxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173819534114:android:6370a8826c57971d3fe37b",
+        "android_client_info": {
+          "package_name": "com.companyname.TurneTrans"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHQ9GPnnI_3Gwf_tkjOvKIe6pTGbASvxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
