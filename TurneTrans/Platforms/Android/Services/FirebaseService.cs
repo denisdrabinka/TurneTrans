@@ -28,26 +28,26 @@ public class FirebaseService : FirebaseMessagingService
     {
         base.OnMessageReceived(message);
         var notification = message.GetNotification();
-        SendNotification(notification.Body, notification.Title, message.Data);
+        sendNotification(notification.Body, notification.Title, message.Data);
     }
 
-    private void SendNotification(string messageBody, string title, IDictionary<string, string> data)
+    private void sendNotification(string in_messageBody, string in_title, IDictionary<string, string> in_data)
     {
         var intent = new Intent(this, typeof(MainActivity));
         intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
 
-        foreach (var key in data.Keys)
+        foreach (var key in in_data.Keys)
         {
-            string value = data[key];
+            string value = in_data[key];
             intent.PutExtra(key, value);
         }
 
         var pendingIntent = PendingIntent.GetActivity(this, MainActivity.NotificationID, intent, PendingIntentFlags.OneShot | PendingIntentFlags.Immutable);
 
         var notificationBuilder = new NotificationCompat.Builder(this, MainActivity.Channel_ID)
-            .SetContentTitle(title)
+            .SetContentTitle(in_title)
             .SetSmallIcon(Resource.Mipmap.appicon)
-            .SetContentText(messageBody)
+            .SetContentText(in_messageBody)
             .SetChannelId(MainActivity.Channel_ID)
             .SetContentIntent(pendingIntent)
             .SetAutoCancel(true)

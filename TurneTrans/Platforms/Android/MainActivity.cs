@@ -20,7 +20,7 @@ namespace TurneTrans
             {
                 ActivityCompat.RequestPermissions(this, new String[] { Android.Manifest.Permission.PostNotifications }, 1);
             }
-            CreateNotificationChannel();
+            createNotificationChannel();
         }
 
         protected override void OnNewIntent(Intent intent)
@@ -41,7 +41,7 @@ namespace TurneTrans
                 }
             }
         }
-        private void CreateNotificationChannel()
+        private void createNotificationChannel()
         {
             if (OperatingSystem.IsOSPlatformVersionAtLeast("android", 26))
             {
