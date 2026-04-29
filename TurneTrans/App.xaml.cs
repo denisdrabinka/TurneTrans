@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace TurneTrans
+namespace MobileTts
 {
     public partial class App : Application
     {

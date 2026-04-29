@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TurneTrans.Platforms.Android.Services;
+namespace MobileTts.Platforms.Android.Services;
 
 [Service(Exported = true)]
 [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
@@ -46,7 +46,7 @@ public class FirebaseService : FirebaseMessagingService
 
         var notificationBuilder = new NotificationCompat.Builder(this, MainActivity.Channel_ID)
             .SetContentTitle(in_title)
-            .SetSmallIcon(Resource.Mipmap.appicon)
+            .SetSmallIcon(Microsoft.Maui.Resource.Mipmap.appicon)
             .SetContentText(in_messageBody)
             .SetChannelId(MainActivity.Channel_ID)
             .SetContentIntent(pendingIntent)

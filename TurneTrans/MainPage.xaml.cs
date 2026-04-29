@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace TurneTrans
+namespace MobileTts
 {
     public partial class MainPage : ContentPage
     {

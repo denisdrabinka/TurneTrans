@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace TurneTrans
+namespace MobileTts
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

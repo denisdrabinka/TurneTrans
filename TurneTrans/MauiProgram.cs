@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace TurneTrans
+namespace MobileTts
 {
     public static class MauiProgram
     {
